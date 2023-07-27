@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org/) project that allows users to retrieve a
 
 ## How to Use
 
-1. Visit the projectt hosted on Vercel [https://summations-demo.vercel.app/](https://summations-demo.vercel.app/).
+1. Visit the project hosted on Vercel [https://summations-demo.vercel.app/](https://summations-demo.vercel.app/).
 2. Enter the DOI of the research paper for which you want to retrieve the abstract.
 3. Click on the "Get Abstract" button.
 4. The application will make an API call to OpenAlex using the provided DOI and return the decompressed abstract as a single long paragraph.
