@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Button, Input, Textarea, useMantineTheme, Paper, LoadingOverlay } from "@mantine/core";
 import { AiOutlineSearch } from "react-icons/ai";
 import { BASE_URL } from "../utils/Constants";
+import getAbstractParagraph from "../utils/getAbstractParagraph";
 
 const AbstractFetcher = () => {
   const theme = useMantineTheme();
@@ -24,7 +25,7 @@ const AbstractFetcher = () => {
       const data = await response.json();
 
       if (response.ok) {
-        setAbstract(JSON.stringify(data.abstract));
+        setAbstract(getAbstractParagraph(JSON.stringify(data.abstract)));
       } else {
         setError("Failed to retrive the abstract. Please try again later." );
       }
